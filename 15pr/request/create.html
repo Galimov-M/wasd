@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <ul class="nav">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="all.html">Все заявки</a></li>
+            <li><a href="../Person.html">Личный кабинет</a></li>
+        </ul>
+    </header>
+    <h1 class="request_form_title">Создание <br> заявки</h1>
+    <form class="request_form">
+        <input type="text" placeholder="Название" class="request_input">
+        <textarea placeholder="Описание" class="request_input request_description"></textarea>
+        <div class="request_category_box">
+            <select  class="category_list" id="selectID" >
+                <option selected disabled>Категория</option>
+    
+                <option value=”GR”>Green</option>
+                
+                <option value=”YE”>Yellow</option>
+                
+                <option value=”BL”>Black</option>
+                
+            </select>
+        </div>
+        <div class="image_wrapper">
+            <label for="file">
+                <img src="../Vector.png" id="img" alt="image">
+            </label>
+            <input type="file" id="file" accept="image/">
+            <span id="img_placeholder">Прикрепите изображение</span>
+        </div>
+
+        <div class="button_request">
+            <button class="request_add_ultra"><a href="">Создание заявки</a></button>
+        </div>
+    </form>
+    <footer>
+        <span>
+            Все права защишены законом<br>
+            Портал "Городской портал"
+        </span>
+    </footer>
+    <script type="text/javascript">
+        const reader = new FileReader()
+        const fileInput = document.getElementById("file")
+        const img = document.getElementById("img")
+        const imgText = document.getElementById("img_placeholder")
+        let file;
+        reader.onload = e => {
+            img.src = e.target.result
+            imgText.style.display = "none"
+        }
+
+        fileInput.addEventListener("change", e => {
+            const f = e.target.files[0]
+            file = f
+            reader.readAsDataURL(f)
+        })
+
+        const form = document.querySelector(".request_form")
+
+        form.addEventListener("submit", (e) => {
+            const isValid = e.target[0].value.length > 0 && e.target[1].value.length > 0
+            e.preventDefault()
+        })
+
+    </script>
+</body>
+</html>

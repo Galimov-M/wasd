@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <ul class="nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="request/all.html">Все заявки</a></li>
+                <li><a href="Person.html">Личный кабинет</a></li>
+            </ul>
+    </header>
+    <main>
+        <div class="zv">
+           <h1>Портал <br> "Городской портал"</h1>
+        </div>
+        <form class="auth" action="authorization.php">
+            <span>Авторизация</span>
+            <input type="text" placeholder="Логин" id="login">
+            <input type="password" placeholder="Пароль" id="password">
+            <button id="auth_btn">ВОЙТИ</button>
+            <a href="registration.html">Регистрация</a>
+        </form>
+        <div class="request-title">
+            <h2>
+                Последние заявки
+            </h2>
+            <span>
+                Количество решенных задач: n
+            </span>
+        </div>
+        <div class="requests">
+            <div class="request request1">
+                <span class="title">Название</span>
+                <span class="date-request">dd-mm-yyyy</span>
+                <span class="category"><i>Категория</i></span>
+                <img src="https://klike.net/uploads/posts/2019-05/1556708032_1.jpg" alt = "asd" width = "440px" height = "180px">
+            </div>
+            <div class="request request2">
+                <span class="title">Название</span>
+                <span class="date-request">dd-mm-yyyy</span>
+                <span class="category"><i>Категория</i></span>
+                <img src="https://klike.net/uploads/posts/2019-05/1556708032_1.jpg" alt = "asd" width = "440px" height = "180px">
+            </div>
+            <div class="request request3">
+                <span class="title">Название</span>
+                <span class="date-request">dd-mm-yyyy</span>
+                <span class="category"><i>Категория</i></span>
+                <img src="https://klike.net/uploads/posts/2019-05/1556708032_1.jpg" alt = "asd" width = "440px" height = "180px">
+            </div>
+            <div class="request request4">
+                <span class="title">Название</span>
+                <span class="date-request">dd-mm-yyyy</span>
+                <span class="category"><i>Категория</i></span>
+                <img src="https://klike.net/uploads/posts/2019-05/1556708032_1.jpg" alt = "asd" width = "440px" height = "180px">
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <span>
+            Все права защишены законом<br>
+            Портал "Городской портал"
+        </span>
+    </footer>
+</body>
+</html>

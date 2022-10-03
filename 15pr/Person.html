@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <ul class="nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="request/all.html">Все заявки</a></li>
+                <li><a href="Person.html">Личный кабинет</a></li>
+            </ul>
+    </header>
+    <main class="person">
+        <h1>Личный кабинет</h1>
+        <div class="info_user">
+            <div class="img_info">
+                <div class="img_user">
+                    <img src="https://www.visitdubai.com/-/media/gathercontent/article/t/top-rides-at-img-worlds-of-adventure/media/top-rides-at-img-worlds-of-adventure-predator-5.jpg?rev=f1bb54a15add49a09c912eac851f4ff7&cx=0.56&cy=0.4&cw=397&ch=397" alt="img" width="140" height="140">
+                </div>
+                <span class="span_info"><span>Логин</span>  <span>ФИО</span>  <span>Email</span></span>
+            </div>
+            <div class="request_add" action="">
+                <button><a href="request/create.html">Создание заявки</a></button>
+            </div>
+        </div>
+        <div class="my_requests">
+            <h6>Мои заявки</h6>
+            <div class="category_box">
+                <select  class="category_list" id="selectID" >
+                    <option selected disabled>Категория</option>
+        
+                    <option value=”GR”>Green</option>
+                    
+                    <option value=”YE”>Yellow</option>
+                    
+                    <option value=”BL”>Black</option>
+                    
+                </select>
+            </div>
+            <div></div>
+        </div>
+        <div class="requests_user">
+            <div class="request_user request1">
+                <span class="title">Название</span>
+                <span class="date-request">dd-mm-yyyy</span>
+                <span class="category"><i>Категория</i></span>
+                <img src="https://klike.net/uploads/posts/2019-05/1556708032_1.jpg" alt = "asd" width = "440px" height = "180px">
+            </div>
+            <div class="request request2">
+                <span class="title">Название</span>
+                <span class="date-request">dd-mm-yyyy</span>
+                <span class="category"><i>Категория</i></span>
+                <img src="https://klike.net/uploads/posts/2019-05/1556708032_1.jpg" alt = "asd" width = "440px" height = "180px">
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <span>
+            Все права защишены законом<br>
+            Портал "Городской портал"
+        </span>
+    </footer>
+</body>
+</html>
